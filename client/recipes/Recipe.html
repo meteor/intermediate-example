@@ -1,0 +1,11 @@
+<template name="Recipe">
+	<article class="recipe">
+		<h3>{{name}}</h3>
+		<p>{{desc}}</p>
+			<p>
+				{{#each ingredients}}
+					<span class="ingredient">{{name}} - {{amount}}</span>
+				{{/each}} 
+			</p>
+	</article>
+</template>
