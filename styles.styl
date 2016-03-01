@@ -314,16 +314,18 @@ input, select, textarea
     z-index 1
     shadow-level(1)
     trans()
-    .remove-from-menu
+    .btn-primary
+        display block
+    .btn-deny
         display none
     &.in-menu
         background teal
         color #FFF
         h3
             border-bottom: rgba(255,255,255, 0.6) solid 3px
-        .add-to-menu
+        .btn-primary
             display none
-        .remove-from-menu  
+        .btn-deny  
             display block
     h3
         font-size: 3em;
