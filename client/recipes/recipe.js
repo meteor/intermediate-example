@@ -7,6 +7,9 @@ Template.Recipe.onCreated(function(){
 Template.Recipe.helpers({
 	updateRecipeId: function() {
 		return this._id;
+	},
+	editMode: function(){
+		return Template.instance().editMode.get();
 	}
 });
 
