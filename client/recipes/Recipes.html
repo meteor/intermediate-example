@@ -1,6 +1,9 @@
 <template name="Recipes">
-	<button class="new-recipe">New Recipe</button>
-	{{> NewRecipe}}
+	{{#if $.Session.get 'newRecipe'}}
+		{{> NewRecipe}}
+	{{else}}
+		<button class="new-recipe">New Recipe</button>
+	{{/if}}	
 	<section class="recipes">
 		{{#if Template.subscriptionsReady}}
 			{{#each recipes}}
